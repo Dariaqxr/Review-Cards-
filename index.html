@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Review Flashcards</title>
+    <!-- Подключаем основной CSS-файл -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем Font Awesome для иконок солнца/луны -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="theme-light"> <!-- Класс 'theme-light' по умолчанию. JS будет его менять -->
+
+    <!-- Фоновые слои для создания глубины и анимированных эффектов -->
+    <!-- Эти слои будут содержать анимированные "абстрактные" формы (blobs) -->
+    <div class="background-layer layer-1"></div>
+    <div class="background-layer layer-2"></div>
+    <div class="background-layer layer-3"></div>
+
+    <!-- Контейнер для частиц (будет анимироваться с помощью CSS) -->
+    <!-- Здесь мы можем создать несколько псевдоэлементов или динамически добавить их через JS -->
+    <div id="particles-js" class="particles-background">
+        <!-- Эти div-ы будут служить основой для CSS-анимированных "частиц" -->
+        <div class="particle p-1"></div>
+        <div class="particle p-2"></div>
+        <div class="particle p-3"></div>
+        <div class="particle p-4"></div>
+        <div class="particle p-5"></div>
+        <div class="particle p-6"></div>
+        <div class="particle p-7"></div>
+        <div class="particle p-8"></div>
+    </div>
+
+    <!-- Основная обертка для всего контента страницы (заголовок, кнопки, карточки) -->
+    <!-- Она будет иметь основной неоморфный фон -->
+    <div class="main-content-wrapper">
+        <h1 class="title">Biology Review Flashcards</h1>
+
+        <!-- Контейнер для кнопок смены темы -->
+        <div class="theme-switcher">
+            <!-- Кнопка для переключения на светлую тему -->
+            <button id="light-theme-btn" class="neumorphic-btn active-theme">
+                <i class="fas fa-sun"></i> <!-- Иконка солнца -->
+            </button>
+            <!-- Кнопка для переключения на темную тему -->
+            <button id="dark-theme-btn" class="neumorphic-btn">
+                <i class="fas fa-moon"></i> <!-- Иконка луны -->
+            </button>
+        </div>
+
+        <!-- Контейнер для всех карточек -->
+        <div class="card-container">
+            <!-- Каждая карточка имеет обертку .card и две стороны: .front (вопрос) и .back (ответ) -->
+            <!-- Card 1: Митоз -->
+            <div class="card">
+                <div class="front">What is mitosis?</div>
+                <div class="back">Cell division that creates two identical daughter cells.</div>
+            </div>
+
+            <!-- Card 2: ДНК -->
+            <div class="card">
+                <div class="front">What is DNA?</div>
+                <div class="back">The molecule that carries genetic information.</div>
+            </div>
+
+            <!-- Card 3: Рибосомы -->
+            <div class="card">
+                <div class="front">Function of ribosomes?</div>
+                <div class="back">They synthesize proteins in the cell.</div>
+            </div>
+
+            <!-- Card 4: Фотосинтез -->
+            <div class="card">
+                <div class="front">Photosynthesis occurs in?</div>
+                <div class="back">The chloroplasts of plant cells.</div>
+            </div>
+
+            <!-- Card 5: Осмос -->
+            <div class="card">
+                <div class="front">What is osmosis?</div>
+                <div class="back">Diffusion of water through a semi-permeable membrane.</div>
+            </div>
+
+            <!-- Card 6: Ген -->
+            <div class="card">
+                <div class="front">What is a gene?</div>
+                <div class="back">A segment of DNA that codes for a trait.</div>
+            </div>
+
+            <!-- Card 7: Ядро -->
+            <div class="card">
+                <div class="front">Function of the nucleus?</div>
+                <div class="back">It controls cell activities and stores DNA.</div>
+            </div>
+
+            <!-- Card 8: Хлорофилл -->
+            <div class="card">
+                <div class="front">Function of chlorophyll?</div>
+                <div class="back">It absorbs light for photosynthesis.</div>
+            </div>
+            <!-- Убедитесь, что у вас есть минимум 8 карточек, как того требует задание -->
+        </div> <!-- Закрытие .card-container -->
+    </div> <!-- Закрытие .main-content-wrapper -->
+
+    <!-- Подключаем JavaScript-файл в конце body для лучшей производительности -->
+    <script src="script.js"></script>
+
+</body>
+</html>
